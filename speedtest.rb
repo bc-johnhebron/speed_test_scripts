@@ -3,7 +3,7 @@ require 'irb'
 require 'speedtest_net'
 
 def run_test(iterations = 1, delay = 0)
-  iterations.times do
+  iterations.times do |i|
     time = Time.now
     result = SpeedtestNet.run
 
@@ -20,7 +20,7 @@ def run_test(iterations = 1, delay = 0)
     end
 
     puts "[#{Time.now}] Download: #{result.pretty_download}. Upload: #{result.pretty_upload}. Latency: #{result.pretty_latency}"
-    sleep(delay)
+    sleep(delay) if iterations - i > 1
   end
 end
 
