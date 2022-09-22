@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/bc-johnhebron/speedtest_net.git
-  revision: 65a241debec0d6f0e9c83073a8befa967c4d8108
+  revision: 2e5659d8b2093d06c5bc5d398f1c129f01d874eb
   branch: add-hash-and-array-methods
   specs:
     speedtest_net (0.9.1)
