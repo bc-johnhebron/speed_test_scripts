@@ -1,4 +1,4 @@
-require 'irb'
+require 'bundler/setup'
 require 'speedtest_net'
 
 def run_test
